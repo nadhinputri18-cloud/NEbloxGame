@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NEblox Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.js"></script>
+</head>
+<body>
+
+<!-- MENU MULAI -->
+<div id="start-screen">
+    <h1>NEblox Game</h1>
+    <button onclick="startGame()">Mulai</button>
+</div>
+
+<!-- GAME OVER -->
+<div id="game-over" class="hidden">
+    <h2>Game Over!</h2>
+    <button onclick="restart()">Main Lagi</button>
+</div>
+
+<!-- QUIZ -->
+<div id="quiz-box" class="hidden">
+    <div class="quiz-content">
+        <h2 id="quiz-question"></h2>
+        <input type="text" id="quiz-answer" placeholder="Jawaban..." />
+        <button onclick="submitAnswer()">Kirim</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
