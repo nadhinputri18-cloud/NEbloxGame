@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    background: #111;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Menu */
+#start-screen, #game-over {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000000d0;
+    color: white;
+    text-align: center;
+    padding-top: 180px;
+    font-size: 32px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Quiz */
+#quiz-box {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+}
